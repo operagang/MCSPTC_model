@@ -32,7 +32,7 @@ Each instance represents a **multi-crane scheduling problem** defined under diff
 - Each instance file is named as: `{crane_count}_{job}_{idx}.json`
   - Example: `2_15_4.json` → 2 cranes per track, 15 jobs, 4th instance
 
-- All instances are stored in the `Instances/` folder.
+- All instances are stored in the `instances/` folder.
 
 ### Instance scales
 
