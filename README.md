@@ -70,7 +70,7 @@ For details, refer to **Tables 10 and 11** in the *Supplementary Material* of th
 
 | JSON Key | Symbol in Paper | Type | Example Representation |
 |-----------|----------------|------|-------------------------|
-| `hat(t)` | 𝑡̂ | Single value | `Data['hat(t)']` = 𝑡̂t̂ |
+| `hat(t)` | t̂ | Single value | `Data['hat(t)']` = t̂ |
 | `lambda` | λ | Single value | `Data['lambda']` = λ |
 | `gamma` | γ | Single value | `Data['gamma']` = γ |
 | `T` | T | List | `Data['T'] =` T |
@@ -92,10 +92,10 @@ For details, refer to **Tables 10 and 11** in the *Supplementary Material* of th
 | `d` | d<sub>(τ,τ′)</sub> | Dict | `Data['d']['(τ,τ′)']` = d<sub>(τ,τ′)</sub> |
 | `M` | M | Single value | `Data['M']` = M |
 | `h` | h<sub>τ</sub> | Dict | `Data['h']['τ']` = h<sub>τ</sub> |
-| `t^0` | t<sub>(0,τ)<sup>v</sup></sub> | Dict | `Data['t^0']['(v,τ)']` = t<sub>(0,τ)</sub><sup>v</sup> |
+| `t^0` | t<sub>(0,τ)</sub><sup>v</sup> | Dict | `Data['t^0']['(v,τ)']` = t<sub>(0,τ)</sub><sup>v</sup> |
 | `t` | t<sub>(τ,τ′)</sub> | Dict | `Data['t']['(τ,τ′)']` = t<sub>(τ,τ′)</sub> |
 | `Theta` | Θ | List | `Data['Theta']` = Θ |
-| `Delta` | Δ<sub>(τ,τ′)<sup>(v,v′)</sup></sub> | Dict | `Data['Delta']['(τ,τ′,v,v′)']` = Δ<sub>(τ,τ′)</sub><sup>(v,v′)</sup> |
+| `Delta` | Δ<sub>(τ,τ′)</sub><sup>(v,v′)</sup> | Dict | `Data['Delta']['(τ,τ′,v,v′)']` = Δ<sub>(τ,τ′)</sub><sup>(v,v′)</sup> |
 | `Lambda^1` | Λ<sup>1</sup> | List | `Data['Lambda^1']` = Λ<sup>1</sup> |
 | `Lambda^2` | Λ<sup>2</sup> | List | `Data['Lambda^2']` = Λ<sup>2</sup> |
 | `Lambda^3` | Λ<sup>3</sup> | List | `Data['Lambda^3']` = Λ<sup>3</sup> |
@@ -107,7 +107,7 @@ For details, refer to **Tables 10 and 11** in the *Supplementary Material* of th
 
 - For job > 5, the following parameters are not included to reduce total file size,
   as they can be computed from other parameters:
-  `h_τ, t_(0,τ)^v, t_(τ,τ′), Θ, Δ_(τ,τ′)^(v,v′), Λ^1, Λ^2, Λ^3, Λ^4`
+  `h<sub>τ</sub>, t<sub>(0,τ)</sub><sup>v</sup>, t<sub>(τ,τ′)</sub>, Θ, Δ<sub>(τ,τ′)</sub><sup>(v,v′)</sup>, Λ<sup>1</sup>, Λ<sup>3</sup>, Λ<sup>3</sup>, Λ<sup>4</sup>
 
 - Parameters es_τ, ls_τ, and d_(τ,τ′) are included even though they are derivable,
   since their computation requires Floyd–Warshall algorithm.
