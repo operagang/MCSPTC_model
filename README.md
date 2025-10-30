@@ -15,7 +15,7 @@ The dataset contains instance files used for the experiments in the above paper.
 Each instance represents a **multi-crane scheduling problem** defined under different scales characterized by:
 
 - The **number of cranes per track**, and  
-- The **number of jobs (tasks)** to be scheduled.
+- The **number of jobs (not tasks)** to be scheduled.
 
 ---
 
