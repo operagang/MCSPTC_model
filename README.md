@@ -60,6 +60,9 @@ Example structure:
   "task_tr": {"1": 1, "2": 2, "3": 2, "4": 1}
 }
 ```
+
+---
+
 ## 4. Parameter Definitions
 
 Each key corresponds to a parameter in the paper, following the same notation.
@@ -98,6 +101,8 @@ For details, refer to Tables 10 and 11 in the Supplementary Material of the pape
 | `Lambda^3` | Λ<sup>3</sup>                       | List         | Valid inequality set 3                         |
 | `Lambda^4` | Λ<sup>4</sup>                       | List         | Valid inequality set 4                         |
 
+---
+
 ## 5. Notes on Provided Parameters
 
 - For job > 5, the following parameters are not included to reduce total file size,
@@ -112,6 +117,8 @@ For details, refer to Tables 10 and 11 in the Supplementary Material of the pape
 - Values such as ∞ in b_τ indicate no upper bound.
 
 - Negative values in g_(τ,τ′), d_(τ,τ′), and Δ_(τ,τ′)^(v,v′) are normal and valid.
+
+---
 
 ## 6. Citation
 
