@@ -65,41 +65,41 @@ Example structure:
 
 ## 4. Parameter Definitions
 
-Each key corresponds to a parameter in the paper, following the same notation.
-For details, refer to Tables 10 and 11 in the Supplementary Material of the paper.
+Each key corresponds to a parameter in the paper, following the same notation.  
+For details, refer to **Tables 10 and 11** in the *Supplementary Material* of the paper.
 
-| JSON Key   | Symbol in Paper                     | Type         | Description                                    |
-| ---------- | ----------------------------------- | ------------ | ---------------------------------------------- |
-| `hat(t)`   | 𝑡̂                                   | Single value | Model parameter                                |
-| `lambda`   | λ                                   | Single value | Model parameter                                |
-| `gamma`    | γ                                   | Single value | Model parameter                                |
-| `T`        | T                                   | List         | Set of time indices                            |
-| `T^obj`    | T<sup>obj</sup>                     | List         | Subset of objective time indices               |
-| `task_tr`  | tr<sub>τ</sub>                      | Dict         | Track index of each task                       |
-| `r`        | r<sub>τ</sub>                       | Dict         | Release time                                   |
-| `a`        | a<sub>τ</sub>                       | Dict         | Arrival time                                   |
-| `b`        | b<sub>τ</sub>                       | Dict         | Due time (∞ indicates no upper bound)          |
-| `l^1`      | l<sub>τ</sub><sup>1</sup>           | Dict         | Location 1                                     |
-| `l^2`      | l<sub>τ</sub><sup>2</sup>           | Dict         | Location 2                                     |
-| `g`        | g<sub>(τ,τ′)</sub>                  | Dict         | Binary parameter (may include negative values) |
-| `Xi`       | Ξ                                   | List         | Set of time windows                            |
-| `V`        | V                                   | List         | Set of cranes                                  |
-| `V_tau`    | V<sub>τ</sub>                       | Dict         | Available cranes for each task                 |
-| `l^0`      | l<sub>v</sub><sup>0</sup>           | Dict         | Initial location of each crane                 |
-| `crane_tr` | —                                   | Dict         | Track index of each crane (not in paper)       |
-| `es`       | es<sub>τ</sub>                      | Dict         | Earliest start time                            |
-| `ls`       | ls<sub>τ</sub>                      | Dict         | Latest start time                              |
-| `d`        | d<sub>(τ,τ′)</sub>                  | Dict         | Travel time between tasks                      |
-| `M`        | M                                   | Single value | Big-M parameter (for MILP reproducibility)     |
-| `h`        | h<sub>τ</sub>                       | Dict         | Processing time                                |
-| `t^0`      | t<sub>(0,τ)<sup>v</sup></sub>       | Dict         | Travel time from initial to first task         |
-| `t`        | t<sub>(τ,τ′)</sub>                  | Dict         | Travel time between tasks                      |
-| `Theta`    | Θ                                   | List         | Feasible temporal relations                    |
-| `Delta`    | Δ<sub>(τ,τ′)<sup>(v,v′)</sup></sub> | Dict         | Temporal interference parameter                |
-| `Lambda^1` | Λ<sup>1</sup>                       | List         | Valid inequality set 1                         |
-| `Lambda^2` | Λ<sup>2</sup>                       | List         | Valid inequality set 2                         |
-| `Lambda^3` | Λ<sup>3</sup>                       | List         | Valid inequality set 3                         |
-| `Lambda^4` | Λ<sup>4</sup>                       | List         | Valid inequality set 4                         |
+| JSON Key | Symbol in Paper | Type | Example Representation |
+|-----------|----------------|------|-------------------------|
+| `hat(t)` | 𝑡̂ | Single value | `Data['hat(t)'] = t̂` |
+| `lambda` | λ | Single value | `Data['lambda'] = λ` |
+| `gamma` | γ | Single value | `Data['gamma'] = γ` |
+| `T` | T | List | `Data['T'] = list(T)` |
+| `T^obj` | T<sup>obj</sup> | List | `Data['T^obj'] = list(T^obj)` |
+| `task_tr` | tr<sub>τ</sub> | Dict | `Data['task_tr']['τ'] = tr_τ` |
+| `r` | r<sub>τ</sub> | Dict | `Data['r']['τ'] = r_τ` |
+| `a` | a<sub>τ</sub> | Dict | `Data['a']['τ'] = a_τ` |
+| `b` | b<sub>τ</sub> | Dict | `Data['b']['τ'] = b_τ` |
+| `l^1` | l<sub>τ</sub><sup>1</sup> | Dict | `Data['l^1']['τ'] = l_τ^1` |
+| `l^2` | l<sub>τ</sub><sup>2</sup> | Dict | `Data['l^2']['τ'] = l_τ^2` |
+| `g` | g<sub>(τ,τ′)</sub> | Dict | `Data['g']['(τ,τ′)'] = g_(τ,τ′)` |
+| `Xi` | Ξ | List | `Data['Xi'] = list(Ξ)` |
+| `V` | V | List | `Data['V'] = list(V)` |
+| `V_tau` | V<sub>τ</sub> | Dict | `Data['V_tau']['τ'] = list(V_τ)` |
+| `l^0` | l<sub>v</sub><sup>0</sup> | Dict | `Data['l^0']['v'] = l_v^0` |
+| `crane_tr` | — | Dict | `Data['crane_tr']['v'] = track index of crane v` |
+| `es` | es<sub>τ</sub> | Dict | `Data['es']['τ'] = es_τ` |
+| `ls` | ls<sub>τ</sub> | Dict | `Data['ls']['τ'] = ls_τ` |
+| `d` | d<sub>(τ,τ′)</sub> | Dict | `Data['d']['(τ,τ′)'] = d_(τ,τ′)` |
+| `M` | M | Single value | `Data['M'] = M` |
+| `h` | h<sub>τ</sub> | Dict | `Data['h']['τ'] = h_τ` |
+| `t^0` | t<sub>(0,τ)</sub><sup>v</sup> | Dict | `Data['t^0']['(v,τ)'] = t_(0,τ)^v` |
+| `t` | t<sub>(τ,τ′)</sub> | Dict | `Data['t']['(τ,τ′)'] = t_(τ,τ′)` |
+| `Theta` | Θ | List | `Data['Theta'] = list(Θ)` |
+| `Delta` | Δ<sub>(τ,τ′)</sub><sup>(v,v′)</sup> | Dict | `Data['Delta']['(τ,τ′,v,v′)'] = Δ_(τ,τ′)^(v,v′)` |
+| `Lambda^1` | Λ<sup>1</sup> | List | `Data['Lambda^1'] = list(Λ^1)` |
+| `Lambda^2` | Λ<sup>2</sup> | List | `Data['Lambda^2'] = list(Λ^2)` |
+| `Lambda^3` | Λ<sup>3</sup> | List | `Data['Lambda^3'] = list(Λ^3)` |
+| `Lambda^4` | Λ<sup>4</sup> | List | `Data['Lambda^4'] = list(Λ^4)` |
 
 ---
 
