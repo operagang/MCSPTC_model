@@ -3,7 +3,7 @@
 This repository provides the experimental dataset used in the following paper:
 
 > **Woo-Jin Shin**, Hyun-Jung Kim.  
-> *Advances in Multi-Crane Scheduling: Extended Non-Interference Modeling and Temporal Constraints*.  
+> *Advances in Multi-Crane Scheduling: Extended Non-Interference Modeling and Temporal-Constraint-Based Valid Inequalities*.  
 > *European Journal of Operational Research*, 2025.  
 > [https://doi.org/10.1016/j.ejor.2025.10.032](https://doi.org/10.1016/j.ejor.2025.10.032)
 
@@ -117,7 +117,7 @@ For details, refer to Tables 10 and 11 in the Supplementary Material of the pape
 If you use this dataset in academic work, please cite:
 
 Woo-Jin Shin and Hyun-Jung Kim (2025).
-Advances in Multi-Crane Scheduling: Extended Non-Interference Modeling and Temporal Constraints.
+Advances in Multi-Crane Scheduling: Extended Non-Interference Modeling and Temporal-Constraint-Based Valid Inequalities.
 European Journal of Operational Research.
 https://doi.org/10.1016/j.ejor.2025.10.032
 
