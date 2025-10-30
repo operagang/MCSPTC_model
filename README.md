@@ -58,7 +58,7 @@ Example structure:
   "T": [0, 1, 2, 3, 4],
   "task_tr": {"τ1": 1, "τ2": 1, "τ3": 2}
 }
-
+```
 ## 4. Parameter Definitions
 
 Each key corresponds to a parameter in the paper, following the same notation.
