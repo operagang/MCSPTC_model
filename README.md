@@ -107,7 +107,7 @@ For details, refer to **Tables 10 and 11** in the *Supplementary Material* of th
 
 - For job > 5, the following parameters are not included to reduce total file size,
   as they can be computed from other parameters:  
-  h<sub>τ</sub>, t<sub>(0,τ)</sub><sup>v</sup>, t<sub>(τ,τ′)</sub>, Θ, Δ<sub>(τ,τ′)</sub><sup>(v,v′)</sup>, Λ<sup>1</sup>, Λ<sup>3</sup>, Λ<sup>3</sup>, Λ<sup>4</sup>
+  h<sub>τ</sub>, t<sub>(0,τ)</sub><sup>v</sup>, t<sub>(τ,τ′)</sub>, Θ, Δ<sub>(τ,τ′)</sub><sup>(v,v′)</sup>, Λ<sup>1</sup>, Λ<sup>2</sup>, Λ<sup>3</sup>, Λ<sup>4</sup>
 
 - Parameters es<sub>τ</sub>, ls<sub>τ</sub>, and d<sub>(τ,τ′)</sub> are included even though they are derivable,
   since their computation requires Floyd–Warshall algorithm.
