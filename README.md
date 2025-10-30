@@ -70,36 +70,36 @@ For details, refer to **Tables 10 and 11** in the *Supplementary Material* of th
 
 | JSON Key | Symbol in Paper | Type | Example Representation |
 |-----------|----------------|------|-------------------------|
-| `hat(t)` | 𝑡̂ | Single value | `Data['hat(t)'] = t̂` |
-| `lambda` | λ | Single value | `Data['lambda'] = λ` |
-| `gamma` | γ | Single value | `Data['gamma'] = γ` |
-| `T` | T | List | `Data['T'] = list(T)` |
-| `T^obj` | T<sup>obj</sup> | List | `Data['T^obj'] = list(T^obj)` |
-| `task_tr` | tr<sub>τ</sub> | Dict | `Data['task_tr']['τ'] = tr`<sub>τ</sub> |
-| `r` | r<sub>τ</sub> | Dict | `Data['r']['τ'] = r`<sub>τ</sub> |
-| `a` | a<sub>τ</sub> | Dict | `Data['a']['τ'] = a`<sub>τ</sub> |
-| `b` | b<sub>τ</sub> | Dict | `Data['b']['τ'] = b`<sub>τ</sub> |
-| `l^1` | l<sub>τ</sub><sup>1</sup> | Dict | `Data['l^1']['τ'] = l`<sub>τ</sub><sup>1</sup> |
-| `l^2` | l<sub>τ</sub><sup>2</sup> | Dict | `Data['l^2']['τ'] = l`<sub>τ</sub><sup>2</sup> |
-| `g` | g<sub>(τ,τ′)</sub> | Dict | `Data['g']['(τ,τ′)'] = g`<sub>(τ,τ′)</sub> |
-| `Xi` | Ξ | List | `Data['Xi'] = list(Ξ)` |
-| `V` | V | List | `Data['V'] = list(V)` |
-| `V_tau` | V<sub>τ</sub> | Dict | `Data['V_tau']['τ'] = list(V`<sub>τ</sub>`)` |
-| `l^0` | l<sub>v</sub><sup>0</sup> | Dict | `Data['l^0']['v'] = l`<sub>v</sub><sup>0</sup> |
-| `crane_tr` | — | Dict | `Data['crane_tr']['v'] = track index of crane v` |
-| `es` | es<sub>τ</sub> | Dict | `Data['es']['τ'] = es`<sub>τ</sub> |
-| `ls` | ls<sub>τ</sub> | Dict | `Data['ls']['τ'] = ls`<sub>τ</sub> |
-| `d` | d<sub>(τ,τ′)</sub> | Dict | `Data['d']['(τ,τ′)'] = d`<sub>(τ,τ′)</sub> |
-| `M` | M | Single value | `Data['M'] = M` |
-| `h` | h<sub>τ</sub> | Dict | `Data['h']['τ'] = h`<sub>τ</sub> |
-| `t^0` | t<sub>(0,τ)<sup>v</sup></sub> | Dict | `Data['t^0']['(v,τ)'] = t`<sub>(0,τ)</sub><sup>v</sup> |
-| `t` | t<sub>(τ,τ′)</sub> | Dict | `Data['t']['(τ,τ′)'] = t`<sub>(τ,τ′)</sub> |
-| `Theta` | Θ | List | `Data['Theta'] = list(Θ)` |
-| `Delta` | Δ<sub>(τ,τ′)<sup>(v,v′)</sup></sub> | Dict | `Data['Delta']['(τ,τ′,v,v′)'] = Δ`<sub>(τ,τ′)</sub><sup>(v,v′)</sup> |
-| `Lambda^1` | Λ<sup>1</sup> | List | `Data['Lambda^1'] = list(Λ`<sup>1</sup>`)` |
-| `Lambda^2` | Λ<sup>2</sup> | List | `Data['Lambda^2'] = list(Λ`<sup>2</sup>`)` |
-| `Lambda^3` | Λ<sup>3</sup> | List | `Data['Lambda^3'] = list(Λ`<sup>3</sup>`)` |
-| `Lambda^4` | Λ<sup>4</sup> | List | `Data['Lambda^4'] = list(Λ`<sup>4</sup>`)` |
+| `hat(t)` | 𝑡̂ | Single value | `Data['hat(t)']` = 𝑡̂t̂ |
+| `lambda` | λ | Single value | `Data['lambda']` = λ |
+| `gamma` | γ | Single value | `Data['gamma']` = γ |
+| `T` | T | List | `Data['T'] =` T |
+| `T^obj` | T<sup>obj</sup> | List | `Data['T^obj']` = T<sup>obj</sup> |
+| `task_tr` | tr<sub>τ</sub> | Dict | `Data['task_tr']['τ']` = tr<sub>τ</sub> |
+| `r` | r<sub>τ</sub> | Dict | `Data['r']['τ']` = r<sub>τ</sub> |
+| `a` | a<sub>τ</sub> | Dict | `Data['a']['τ']` = a<sub>τ</sub> |
+| `b` | b<sub>τ</sub> | Dict | `Data['b']['τ']` = b<sub>τ</sub> |
+| `l^1` | l<sub>τ</sub><sup>1</sup> | Dict | `Data['l^1']['τ']` = l<sub>τ</sub><sup>1</sup> |
+| `l^2` | l<sub>τ</sub><sup>2</sup> | Dict | `Data['l^2']['τ']` = l<sub>τ</sub><sup>2</sup> |
+| `g` | g<sub>(τ,τ′)</sub> | Dict | `Data['g']['(τ,τ′)']` = g<sub>(τ,τ′)</sub> |
+| `Xi` | Ξ | List | `Data['Xi']` = Ξ |
+| `V` | V | List | `Data['V']` = V |
+| `V_tau` | V<sub>τ</sub> | Dict | `Data['V_tau']['τ']` = V<sub>τ</sub> |
+| `l^0` | l<sub>v</sub><sup>0</sup> | Dict | `Data['l^0']['v']` = l<sub>v</sub><sup>0</sup> |
+| `crane_tr` | — | Dict | `Data['crane_tr']['v']` = track index of crane v |
+| `es` | es<sub>τ</sub> | Dict | `Data['es']['τ']` = es<sub>τ</sub> |
+| `ls` | ls<sub>τ</sub> | Dict | `Data['ls']['τ']` = ls<sub>τ</sub> |
+| `d` | d<sub>(τ,τ′)</sub> | Dict | `Data['d']['(τ,τ′)']` = d<sub>(τ,τ′)</sub> |
+| `M` | M | Single value | `Data['M']` = M |
+| `h` | h<sub>τ</sub> | Dict | `Data['h']['τ']` = h<sub>τ</sub> |
+| `t^0` | t<sub>(0,τ)<sup>v</sup></sub> | Dict | `Data['t^0']['(v,τ)']` = t<sub>(0,τ)</sub><sup>v</sup> |
+| `t` | t<sub>(τ,τ′)</sub> | Dict | `Data['t']['(τ,τ′)']` = t<sub>(τ,τ′)</sub> |
+| `Theta` | Θ | List | `Data['Theta']` = Θ |
+| `Delta` | Δ<sub>(τ,τ′)<sup>(v,v′)</sup></sub> | Dict | `Data['Delta']['(τ,τ′,v,v′)']` = Δ<sub>(τ,τ′)</sub><sup>(v,v′)</sup> |
+| `Lambda^1` | Λ<sup>1</sup> | List | `Data['Lambda^1']` = Λ<sup>1</sup> |
+| `Lambda^2` | Λ<sup>2</sup> | List | `Data['Lambda^2']` = Λ<sup>2</sup> |
+| `Lambda^3` | Λ<sup>3</sup> | List | `Data['Lambda^3']` = Λ<sup>3</sup> |
+| `Lambda^4` | Λ<sup>4</sup> | List | `Data['Lambda^4']` = Λ<sup>4</sup> |
 
 ---
 
