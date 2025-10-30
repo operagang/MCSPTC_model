@@ -70,11 +70,11 @@ For details, refer to **Tables 10 and 11** in the *Supplementary Material* of th
 
 | JSON Key | Symbol in Paper | Type | Example Representation |
 |-----------|----------------|------|-------------------------|
-| `hat(t)` | 𝑡̂ | Single value | `Data['hat(t)'] = t̂` |
+| `hat(t)` | 𝑡̂ | Single value | `Data['hat(t)'] = 𝑡̂` |
 | `lambda` | λ | Single value | `Data['lambda'] = λ` |
 | `gamma` | γ | Single value | `Data['gamma'] = γ` |
 | `T` | T | List | `Data['T'] = list(T)` |
-| `T^obj` | T<sup>obj</sup> | List | `Data['T^obj'] = list(T^obj)` |
+| `T^obj` | T<sup>obj</sup> | List | `Data['T^obj'] = list(T<sup>obj</sup>)` |
 | `task_tr` | tr<sub>τ</sub> | Dict | `Data['task_tr']['τ'] = tr_τ` |
 | `r` | r<sub>τ</sub> | Dict | `Data['r']['τ'] = r_τ` |
 | `a` | a<sub>τ</sub> | Dict | `Data['a']['τ'] = a_τ` |
