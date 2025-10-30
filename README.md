@@ -55,9 +55,9 @@ Example structure:
 ```json
 {
   "hat(t)": 5,
-  "lambda": 1.2,
-  "T": [0, 1, 2, 3, 4],
-  "task_tr": {"τ1": 1, "τ2": 1, "τ3": 2}
+  "lambda": 1,
+  "T": [1, 2, 3, 4],
+  "task_tr": {"1": 1, "2": 2, "3": 2, "4": 1}
 }
 ```
 ## 4. Parameter Definitions
