@@ -107,7 +107,7 @@ For details, refer to **Tables 10 and 11** in the *Supplementary Material* of th
 
 - For job > 5, the following parameters are not included to reduce total file size,
   as they can be computed from other parameters:
-  h_τ, t_(0,τ)^v, t_(τ,τ′), Θ, Δ_(τ,τ′)^(v,v′), Λ^1, Λ^2, Λ^3, Λ^4
+  `h_τ, t_(0,τ)^v, t_(τ,τ′), Θ, Δ_(τ,τ′)^(v,v′), Λ^1, Λ^2, Λ^3, Λ^4`
 
 - Parameters es_τ, ls_τ, and d_(τ,τ′) are included even though they are derivable,
   since their computation requires Floyd–Warshall algorithm.
