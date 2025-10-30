@@ -109,14 +109,14 @@ For details, refer to **Tables 10 and 11** in the *Supplementary Material* of th
   as they can be computed from other parameters:  
   h<sub>τ</sub>, t<sub>(0,τ)</sub><sup>v</sup>, t<sub>(τ,τ′)</sub>, Θ, Δ<sub>(τ,τ′)</sub><sup>(v,v′)</sup>, Λ<sup>1</sup>, Λ<sup>3</sup>, Λ<sup>3</sup>, Λ<sup>4</sup>
 
-- Parameters es_τ, ls_τ, and d_(τ,τ′) are included even though they are derivable,
+- Parameters es<sub>τ</sub>, ls<sub>τ</sub>, and d<sub>(τ,τ′)</sub> are included even though they are derivable,
   since their computation requires Floyd–Warshall algorithm.
 
 - Parameter M is included to ensure reproducibility of MILP experiments.
 
-- Values such as ∞ in b_τ indicate no upper bound.
+- Values such as ∞ in b<sub>τ</sub> indicate no upper bound.
 
-- Negative values in g_(τ,τ′), d_(τ,τ′), and Δ_(τ,τ′)^(v,v′) are normal and valid.
+- Negative values in g<sub>(τ,τ′)</sub>, d<sub>(τ,τ′)</sub>, and Δ<sub>(τ,τ′)</sub><sup>(v,v′)</sup> are normal and valid.
 
 ---
 
