@@ -72,7 +72,7 @@ For details, refer to **Tables 10 and 11** in the *Supplementary Material* of th
 |-----------|----------------|------|-------------------------|
 | `hat(t)` | t̂ | Single value | `Data['hat(t)']` = t̂ |
 | `lambda` | λ | Single value | `Data['lambda']` = λ |
-| `gamma` | γ | Single value | `Data['gamma']` = γ |
+| `gamma` | $\gamma$ | Single value | `Data['gamma']` = $\gamma$ |
 | `T` | T | List | `Data['T']` = T |
 | `T^obj` | T<sup>obj</sup> | List | `Data['T^obj']` = T<sup>obj</sup> |
 | `task_tr` | tr<sub>τ</sub> | Dict | `Data['task_tr']['τ']` = tr<sub>τ</sub> |
