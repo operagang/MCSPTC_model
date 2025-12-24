@@ -70,7 +70,7 @@ For details, refer to **Tables 10 and 11** in the *Supplementary Material* of th
 
 | JSON Key | Symbol in Paper | Type | Example Representation |
 |-----------|----------------|------|-------------------------|
-| `hat(t)` | t̂$\hat{t}$ | Single value | `Data['hat(t)']` = t̂ |
+| `hat(t)` | t̂ | Single value | `Data['hat(t)']` = t̂ |
 | `lambda` | λ | Single value | `Data['lambda']` = λ |
 | `gamma` | $\gamma$ | Single value | `Data['gamma']` = $\gamma$ |
 | `T` | T | List | `Data['T']` = T |
